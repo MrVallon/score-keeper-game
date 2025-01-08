@@ -60,7 +60,6 @@ struct ContentView: View {
                             Button {
                                 isShowModal.toggle()
                                 currentPlayer = player
-//                                currentPlayer = $player
                             } label: {
                                 Text("Play game")
                             }
@@ -77,7 +76,7 @@ struct ContentView: View {
         }
         .padding()
         .sheet(isPresented: $isShowModal) {
-            DiceView(currentPlayer: $currentPlayer)
+            DiceView(currentPlayer: $currentPlayer, isShowModal: $isShowModal)
         }
     }
 }
