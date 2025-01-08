@@ -6,7 +6,7 @@ struct GameResultScreen: View {
     @Binding var isShowModal: Bool
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 25) {
             Spacer()
             
             Image(systemName: "trophy")
